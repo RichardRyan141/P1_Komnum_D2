@@ -50,6 +50,10 @@ r0 = r;
 m = (l+r)/2.0;
 print();
 while ((abs(f(m)) > 0.000000001) and (abs(l-r) > 0.000000001)):
+    print("l = ", str(l), "\t", "f(l) = ", str(f(l)));
+    print("m = ", str(m), "\t", "f(m) = ", str(f(m)));
+    print("r = ", str(r), "\t", "f(r) = ", str(f(r)));
+    print();
     if (f(m)*f(l) > 0):
         l = m;
     else:
@@ -57,7 +61,6 @@ while ((abs(f(m)) > 0.000000001) and (abs(l-r) > 0.000000001)):
     m = (l+r)/2.0;
 if (abs(f(m)) <= 0.000000001):
     print("Akar persamaan : %.5f" % m);
-    plt.plot(xlist, ylist, c='c');
     plt.vlines(x=m,ymin=min(ylist),ymax=0,colors='red');
     plt.hlines(y=0,xmin=l0,xmax=m,colors='yellow');
 
