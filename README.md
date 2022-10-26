@@ -20,4 +20,5 @@ Disini kami menggambar hingga 3 garis
 1) grafik fungsi f(x)
 2) garis y=0
 3) garis x=M (jika M merupakan akar persamaan)
+
 Garis y=0 dan x=M digunakan untuk membantu pengecekan kebenaran akar (jika ada nilainya bisa dipastikan, jika tidak ada maka nilai f(L) dan f(R) bisa terlihat)
